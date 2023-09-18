@@ -17,3 +17,119 @@
 html, body {
     background-color: var(--color-background);
 }
+
+.header {
+    width: 100%;
+    background-color: var(--color-yellow);
+}
+
+.header-container {
+    width: 1080px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    width: 250px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+
+.title-logo img {
+    width: 100%;
+}
+
+.title-text {
+    font-size: 10px;
+    color: var(--color-brown);
+}
+
+.menu {
+    width: auto;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 16px;
+    margin-left: 15px;
+    transition: 0.7s;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-brown);
+}
+
+.menu a:hover {
+    font-size: 20px;
+    transition: 0.7s;
+    color: var(--color-background);
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    width: 100%;
+    background-color: var(--color-yellow);
+}
+
+.banner-container {
+    width: 1080px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-text {
+    width: auto;
+    font-size: 28px;
+    color: var(--color-brown);
+}
+
+.banner-text strong{
+    font-size: 60px;
+}
+
+.banner-price {
+    border-radius: 80px;
+    border: solid 1px black;
+}
+
+.banner-promotion {
+    width: 400px;
+    height: auto;
+}
+
+.banner-promotion-image {
+    width: 100%;
+    display: flex;
+}
+
+.banner-promotion-image img {
+    width: 100%;
+}
