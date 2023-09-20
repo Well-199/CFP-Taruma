@@ -153,6 +153,17 @@ html, body {
     width: 100%;
 }
 
+.products-title-burgers {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-brown);
+    padding-bottom: 25px;
+    margin-top: 80px;
+}
+
 .carousel {
     width: 1080px;
     height: 450px;
@@ -160,7 +171,6 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 140px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -284,17 +294,53 @@ html, body {
     flex-wrap: wrap;
 }
 
+.product-data {
+    width: 240px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: solid 1px var(--color-gray);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
 .product-image {
     width: 240px;
     height: 240px;
     display: flex;
-    margin-bottom: 25px;
 }
 
 .product-image img {
     width: 100%;
-    border-radius: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     cursor: pointer;
+}
+
+.product-description {
+    width: 240px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.products-cards-name {
+    font-size: 28px;
+    margin-left: 15px;
+    color: var(--color-gray);
+}
+
+.products-cards-price {
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-brown);
+    padding-bottom: 20px;
 }
 
 .testimony {
@@ -313,4 +359,26 @@ html, body {
     align-items: center;
     color: var(--color-brown);
     padding-bottom: 25px;
+}
+
+.testimony-container {
+    width: 100%;
+    height: 403px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.testimony-text {
+    width: 100%;
+    height: 350px;
+    border: solid 1px black;
+}
+
+.testimony-video {
+    width: 100%;
+    display: flex;
+    border: solid 1px black;
 }
