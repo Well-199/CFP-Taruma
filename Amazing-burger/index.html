@@ -24,7 +24,7 @@
                 <a href="#pizzas">Pizzas</a>
                 <a href="#bebidas">Bebidas</a>
                 <a href="#depoimentos">Depoimentos</a>
-                <a href="#">Pedidos</a>
+                <a href="#contato">Contato</a>
             </div>
         </div>
     </header>
@@ -285,21 +285,80 @@
             </div>
             <div class="testimony-container">
                 <div class="testimony-text">
-                    dsddvs
+                    <h1></h1>
+                    <span></span>
                 </div>
 
                 <div class="testimony-video">
                     <iframe 
-                        width="100%" height="403" 
-                        src="https://www.youtube.com/embed/HE2QzWvXb3E?autoplay=1" 
+                        width="100%" 
+                        height="350" 
+                        src="https://www.youtube.com/embed/HE2QzWvXb3E" 
                         title="Take: Hambúrguer Duplo Com Fritas | Sem Direitos Autorais" 
                         frameborder="0" 
-                        allowfullscreen>
-                    </iframe>
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen
+                    ></iframe>
                 </div>
             </div>
         </section>
         <!-- end section depoimentos -->
+        
+        <!-- start section messages -->
+        <section class="form">
+            <div class="form-title" id="contato">
+                <h1>Pedidos e mensagens</h1>
+            </div>
+            <form>
+
+                <input type="text" name="name" placeholder="Nome"/>
+
+                <input type="tel" name="phone" placeholder="(DDD) 00000-0000"/>
+
+                <input type="datetime-local" name="datetime" />
+
+                <input type="text" name="address" placeholder="Endereço"/>
+
+                <input type="file" name="image" />
+
+                <select name="products">
+                    <option value="volvo">Selecione um produto</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+
+                <div class="payment-methods">
+                    <div>
+                        <label for="credit">Crédito</label>
+                        <input type="checkbox" name="payment-credit" id="credit"/>
+                    </div>
+
+                    <div>
+                        <label for="debit">Débito</label>
+                        <input type="checkbox" name="payment-debit" id="debit"/>
+                    </div>
+
+                    <div>
+                        <label for="pix">Pix</label>
+                        <input type="checkbox" name="payment-pix" id="pix"/>
+                        <input type="number" name="key" value="345679999888" disabled id="pix-key-number"/>
+                    </div>
+                </div>
+                
+                <div class="aval">
+                    <span>Avaliação de 0 a 10</span>
+                    <input type="range" name="range">
+                </div>
+
+                <textarea>
+
+                </textarea>
+
+                <button type="submit">ENVIAR</button>
+            </form>
+        </section>
+        <!-- start section messages -->
 
     </div>
 

@@ -363,22 +363,220 @@ html, body {
 
 .testimony-container {
     width: 100%;
-    height: 403px;
+    height: 350px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: solid 1px black;
 }
 
 .testimony-text {
     width: 100%;
     height: 350px;
-    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-yellow);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.testimony-text h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--color-brown);
+}
+
+.testimony-text h1:after {
+    content: 'Muito top o atendimento, chegou super rápido, e também recebi um super desconto.';
+    animation-name: testimony-text;
+    animation-duration: 38s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes testimony-text {
+    0%   {content: 'Parabéns!!! Vcs são demais quando via a imagem duvidei, mas o lanche é idêntico o da foto.';}
+    25%  {content: 'O desconto da semana na segunda-feira é sempre o melhor para mim que não curto cozinha vale muito a pena.';}
+    50%  {content: 'Era o que faltava aqui na cidade, tem ótimos lanches por aqui, mas com essa qualidade e preço só o de vocês';}
+    75%  {content: 'Parabéns!!! Vcs são demais quando via a imagem duvidei, mas o lanche é idêntico o da foto.';}
+    100% {content: 'Muito top o atendimento, chegou super rápido, e também recebi um super desconto.';}
+}
+
+.testimony-text span {
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-brown);
+}
+
+.testimony-text span:after {
+    content: 'Willian Joseph';
+    animation-name: testimony-autor;
+    animation-duration: 38s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes testimony-autor {
+    0%   {content: 'Ana Silva';}
+    25%  {content: 'Naiara Lima';}
+    50%  {content: 'Marcos Batista';}
+    75%  {content: 'Ana Silva';}
+    100% {content: 'Willian Joseph';}
 }
 
 .testimony-video {
     width: 100%;
     display: flex;
+}
+
+iframe {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form {
+    width: 1080px;
+    height: auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-title {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-brown);
+    padding-bottom: 25px;
+}
+
+form {
+    width: 550px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+[type="text"], [type="tel"], [type="datetime-local"], [type="file"], [name="products"] {
+    width: 350px;
+    height: 40px;
+    border: none;
+    text-decoration-line: none;
+    color: var(--color-gray);
+    border-bottom: solid 1px var(--color-gray);
+}
+
+[type="checkbox"], [name="products"] {
+    cursor: pointer;
+}
+
+[type="text"]:focus, 
+[type="tel"]:focus, 
+[type="datetime-local"]:focus,
+[name="products"]:focus {
+    outline: none;
+}
+
+.payment-methods {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px var(--color-gray);
+}
+
+.payment-methods div {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#pix {
+    display: block;
+}
+
+#pix-key-number {
+    display: none;
+}
+
+#pix:checked ~ #pix-key-number  {
+    display: block;
+    text-align: center;
+}
+
+.aval {
+    width: 350px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.aval span {
+    text-align: center;
+}
+
+.aval input {
+    width: 100%;
+}
+
+[name="products"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+[type="file"] {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 350px;
+    height: 200px;
+    max-width: 350px;
+    min-width: 350px;
+    max-height: 200px;
+    min-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--color-background);
+    background-color: var(--color-red);
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
     border: solid 1px black;
 }
