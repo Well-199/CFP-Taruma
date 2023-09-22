@@ -1,0 +1,147 @@
+
+@media only screen and (max-width: 1115px) {
+
+    .banner-container, .header-container, .carousel, .products, .testimony, .form {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner-promotion {
+        width: 500px;
+    } 
+
+}
+
+@media only screen and (max-width: 849px) {
+
+    .banner-promotion {
+        width: 400px;
+    }
+
+    .banner-promotion-image {
+        margin-top: 25px;
+    }
+
+    .carousel-card {
+        width: 200px;
+    }
+
+    .carousel-description {
+        width: 100%;
+    }
+
+    .testimony-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .testimony-text, .testimony-video {
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .video {
+        border-radius: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-text {
+        padding-bottom: 20px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu a:hover {
+        font-size: 16px;
+    }
+
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .carousel-card {
+        width: 260px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    form {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 461px) {
+
+    .menu {
+        justify-content: space-around;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .menu a:hover {
+        font-size: 14px;
+    }
+
+    .banner-text  {
+        font-size: 18px;
+    }
+
+    .banner-text strong {
+        font-size: 28px;
+    }
+
+    .banner-price {
+        width: 100px;
+        height: 100px;
+        margin-left: 15px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .banner-promotion {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    [type="text"], 
+    [type="tel"], 
+    [type="datetime-local"], 
+    [type="file"], 
+    [name="products"],
+    .payment-methods,
+    .aval{
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+}
